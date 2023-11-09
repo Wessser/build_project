@@ -1,0 +1,689 @@
+*{
+	font-family: 'Montserrat', sans-serif;
+}
+
+html{
+	font-size: 16px;
+}
+
+body{
+	padding: 74px 0 0 0;
+}
+
+span.bold{
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 27px;
+}
+
+/* =================Меню навигации=================== */
+
+.navbar{
+	padding: 0;
+	min-height: 74px;
+	box-shadow: 4px 4px 24px 0px rgba(0, 0, 0, 0.08);
+}
+
+.navbar__descr{
+	color: #202020;
+	margin-left: 0.5rem;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.navbar__menu{
+	margin-left: 113px;
+	background-color: #f8f9fa;
+}
+
+.navbar-toggler{
+
+	border: none;
+}
+
+.navbar-nav .nav-item .nav-link{
+	color: #202020;
+	font-size: 16px;
+	font-weight: 500;
+	text-align: center;
+}
+
+.nav-item .nav__phone{
+	color: #202020;
+	font-size: 18px;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.nav-item .nav__call{
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 18px;
+}
+
+.nav-item .navbar__whatsapp{
+	margin-left: 1rem;
+}
+
+/* ======================Начальная секция====================== */
+
+.main{
+	max-height: 800px;
+	padding: 100px 0 202px 0;
+	background: url(img/main-bg.jpg) center center no-repeat ;
+}
+
+.main .main__header{
+	margin: 0;
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 45px;
+	text-transform: uppercase;
+}
+
+span.main__header_yellow{
+	color: orange;
+}
+
+.main__rait{
+	margin: 0;
+	margin-top: 20px;
+	max-width: 286px;
+	background: white;
+	border-radius: 8px;
+	padding: 10px 20px;
+	color: orange;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 45px; 
+	text-transform: uppercase;
+}
+
+.main__banner_green{
+	margin: 0;
+	margin-top: 20px;
+	background: url(img/banner.svg) no-repeat;
+	height: 60px;
+	padding: 10px 116px 20px 76px;
+}
+
+.main__banner_green .main__banner-text{
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 30px;
+}
+
+.main__descr{
+	margin: 0;
+	margin-top: 20px;
+	color: #535353;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 32px;
+}
+
+.main__measurement{
+		margin: 0;
+	margin-top: 40px;
+}
+
+.main__buttom{
+	padding: 20px 56px;
+	border-radius: 100px;
+	border: 1px solid #FF8000;
+	background: #FF8000;
+	color: white;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px; 
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.main__measurement-descr{
+	margin-left: 40px;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	white-space: nowrap
+}
+
+.main__circle{
+	right: 100px;
+	top: 200px;
+	background: white;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.08);
+	padding: 45px 35px;
+}
+
+.trowel{
+	left: 10px;
+	top: -15px;
+}
+
+.main__circle-descr{
+	color: #535353;
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+span.bold-md{
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 36px;
+}
+
+.main__box{
+	margin-top: 180px;
+	max-width: 360px;
+	padding: 25px;
+	background: #ffffff;
+	border-radius: 16px;
+	box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+}
+
+.circle-check{
+	top: -30px;
+	left: 150px;
+}
+
+.main__box .main__box-descr{
+	text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+span.bold-m{
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 45px;
+}
+
+.carousel-indicators{
+	top: 150px;
+}
+
+.carousel-indicators li{
+	
+	background-color: orange;
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+}
+
+.main__box_carousel{
+	margin-top: 35px;
+	padding: 25px;
+	background: #ffffff;
+	border-radius: 16px;
+	box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+}
+
+.main__box_carousel .main__box-descr{
+	text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.main__box_carousel .circle-check{
+
+	left: 220px; 
+}
+
+/* =====================Секция с подробностями=================== */
+
+.details{
+	min-height: 1000px;
+	padding: 170px 0 100px 0; 
+}
+
+.details__box{
+	padding: 30px;
+	border-right: 1px #E6E6E6 solid;
+	border-bottom: 1px #E6E6E6 solid;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.details__box:nth-of-type(3n+3){
+	border-right: none;
+}
+.details__box:nth-of-type(1n+4){
+	border-bottom: none;
+}
+
+.details__box-header{
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 27px;
+}
+
+.details__box-subheader{
+	color: #535353;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+/* =====================Выгода============================*/
+
+.benefit{
+	padding: 96px 0;
+	background: #FAFAFA;
+}
+
+.benefit__header{
+	text-align: center;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 45px;
+	text-transform: uppercase;
+}
+
+.benefit__item {
+	padding-left: 0;
+	padding-right: 0;
+	background: none;
+	border: none;
+	gap: 16px;
+}
+
+.benefit__item:first-of-type{
+	margin-bottom: 6px;
+}
+
+.list-descr_bold{
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 30px;
+}
+
+.list-descr{
+	flex: 1 0 0;
+	color: #535353;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 27px; 
+}
+
+/* =====================Расчет=========================== */
+
+.calculation{
+	padding: 100px 0;
+}
+
+.calculation__header{
+	text-align: center;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 45px;
+	text-transform: uppercase;
+}
+
+
+
+.nav-pills .nav-link.active{
+	border-radius: 100px;
+	background: #FF8000;
+	padding: 10px 35px;
+	color: #ffff;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+
+.nav-pills .nav__btn{
+	
+	padding: 10px 35px;
+	border-radius: 100px;
+	background: #FFF;
+    text-decoration: none;
+	color:#535353;
+	text-align: center;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.calculation__subheader{
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 27px;
+}
+
+.calculation__nav{
+	margin-top: 40px;
+	padding: 8px 12px;
+	border-radius: 100px;
+	background: #FAFAFA;
+}
+
+.calculation__form{
+	padding: 40px 0 50px 0;
+	border-radius: 16px;
+	background: #FAFAFA;
+}
+
+.question{
+	padding: 0 30px;
+}
+
+.form__header{
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 45px;
+}
+
+.form__box{
+	margin-top: 24px;
+	gap: 7px;
+	margin-bottom: 40px;
+}
+
+.form-check{
+	margin: 0;
+}
+
+.tab-pane .question__input{
+	visibility: hidden;
+	position: absolute;
+}
+
+.form__img{
+	cursor: pointer;
+}
+
+.radio__descr{
+	margin-top: 16px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px
+}
+
+.question__input+.form__img{
+	cursor:pointer;
+	border:2px solid transparent;
+	border-radius: 16px;
+}
+
+.question__input:checked+.form__img{
+	border:2px solid #ff8000;
+	box-shadow: #FF8000 1px 2px 5px;
+}
+
+.input__file{
+	width: 1px;
+	height: 1px;
+}
+
+.next__btn{
+	margin-top: 8px;
+	padding: 16px 48px;
+	border-radius: 100px;
+	border: 1px solid #FF8000;
+	background: #FF8000;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+.back__btn{
+	margin-right: 30px;
+	color: #FF8000;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px; /* 150% */
+	text-decoration-line: underline;
+}
+
+/* ===========================Адаптивность===================== */
+@media screen and (max-width: 1200px) {
+
+	.main .main__header{
+		font-size: 24px;
+	}
+	.main .main__rait{
+		font-size: 21px;
+	}
+
+	.main .main__descr{
+		font-size: 18px;
+	}
+	.main__measurement-descr{
+		margin: 30px 0 0 0;
+	}
+	
+	.main .main__banner_green{
+		background-size: 75%;
+		padding: 10px 110px 5px;
+	}
+
+	.main .main__banner-text{
+		font-size: 17px;
+	}
+
+	.circle-check{
+		top: -30px;
+		left: 85px;
+	}
+
+	.main__box{
+		margin-top: 80px;
+		padding: 20px;
+	}
+	.main__box .main__box-descr{
+		font-size: 14px;
+	}
+	span.bold-m{
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+
+	.main{
+		padding: 30px 0 0 0;
+		max-height: 650px;
+	}
+
+	.main .main__header{
+		line-height: 35px;
+	}
+
+	.main .main__banner_green{
+		padding: 3px 75px 5px;
+	}
+	.main__buttom{
+		padding: 15px 34px;
+	}
+
+	.main .main__banner-text{
+		font-size: 14px;
+	}
+
+	.main__box{
+		margin-top: 35px;
+	}
+
+	.circle-check{
+		top: -30px;
+		left: 57px;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.main .main__header{
+		text-align: center;
+	}
+
+	.main__box{
+		max-width: none;
+	}
+
+	.details{
+		padding: 100px 0 50px 0;
+	}
+
+	.details__box{
+		border: none;
+	}
+
+	.details__box-header{
+		font-size: 16px;
+	}
+
+	.details__box-subheader{
+		font-size: 14px;
+	}
+
+}
+
+@media screen and (max-width: 575px){
+	.navbar .container{
+		margin: 0 10px;
+	}
+
+	.carousel{
+	margin-top: 80px;
+}
+
+	.main__box_carousel .circle-check {
+		left: 41.22vw; 
+	}
+
+	.list-descr_bold{
+		font-size: 16px;
+	}
+
+	.list-descr{
+		font-size: 14px;
+	}
+
+	span.bold{
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 510px){
+	.carousel{
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 386px){
+	.main__buttom {
+		font-size: 14px;
+		padding: 10px 14px;
+	}
+
+	.carousel-item .main__box-descr{
+		font-size: 14px;
+	}
+
+	.main__box-descr .bold-m{
+		font-size: 24px;
+	}
+	
+	.main__measurement-descr{
+		text-align: center;
+		font-size: 15px;
+	}
+	.main__box_carousel .circle-check {
+		left: 36.22vw; 
+	}
+
+	.benefit__img{
+		width: 75px;
+	}
+}
+
+@media screen and (max-width: 340px){
+	.navbar__logo{
+		max-width: 75%;
+	}
+	
+	.navbar__menu{
+		margin: 0;
+	}
+
+	.navbar__menu>.nav-item{
+		margin: 0 0 0 50px;
+	}
+	.navbar__menu>.nav-item:last-child{
+		margin: 0 0 0 110px;
+	}
+
+	.main{
+		background-position: top 520px left -530px;
+		max-height: 1650px;
+		background-size: 300%;
+	}
+
+	.main .main__header{
+		font-style: 21px;
+		line-height: 30px
+	}
+
+	.main .main__rait{
+		text-align: center;
+		font-size: 18px;
+	}
+
+	.main__descr{
+		display: none;
+	}
+
+	.main__box_carousel{
+		padding: 23px 10px;
+		margin: 300px 0 0 0;
+	}
+
+	.main__box_carousel .circle-check{
+		left: 36vw;
+	}
+
+	.carousel-indicators{
+		top: 430px;
+	}
+}
+
+@media screen and (max-width: 312px){
+
+	.navbar__menu>.nav-item:last-child{
+		margin: 0 0 0 90px;
+	}
+
+	.main{
+		background-position: top 520px left -470px;
+	}
+
+	.main__buttom {
+		padding: 10px 3px;
+		font-size: 13px;
+	}
+	.main__box_carousel .circle-check{
+		left: 32vw;
+	}
+}

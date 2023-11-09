@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+<!--
+	Урок 7.1 Проектирование лендинга 
+	Пример h37 - первый экран лендинга
+  
+	Создайте первый экран лендинга курса "Веб-разработчик". 
+	Оформление должно отличаться от примера.
+	
+	Задание для продвинутых:
+	Выберите свой товар или услугу.
+	Создайте первый экран лендинга.
+-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Урок 7.1</title>
+</head>
+
+<body>
+
+	<!-- ==========================ГЛАВНОЕ МЕНЮ================= -->
+<header>
+		<div class="fixed-top">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container">
+					<a class="navbar-brand" href="#">
+						<img src="img/logo.png" alt="#" class="navbar__logo mh-100 ">
+					</a>
+					<div class="navbar__descr d-none d-sm-block">Штукатурка стен и стяжка <br> пола в Москве и области</div>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+			
+					<div class="navbar__menu collapse navbar-collapse" id="navbarTogglerDemo02">
+						<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Стоимость <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Примеры работ</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Отзывы</a>
+							</li>
+						</ul>
+						<div class="nav-item">
+							<a href="telephone" class="nav__phone">+7(905)731-62-62</a>
+							<div class="nav__call">Ежедневно с 10:00 до 20:00</div>
+						</div>
+						<div class="nav-item">
+							<a href="#" class="navbar__whatsapp">
+								<img class="whatsapp__logo" src="img/whatsapp__icon.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+</header>
+<!-- =============================Заглавная секция============================ -->
+<section class="main">
+	<div class="container-sm container ">
+		<div class="row">
+			<div class="col-sm-12 col-md-9 col-xl-10 position-relative">
+				<h1 class="main__header">Получите идеальные стены и пол максимально <span class="main__header_yellow">ВЫГОДНО, БЫСТРО и по ЛУЧШЕЙ цене</span><br>
+					в Москве и московской области </h1>
+				<div class="main__rait">от 350 руб за м²</div>
+				<div class="main__banner_green d-none d-sm-block">
+					<div class="main__banner-text">Даем пожизненную гарантию</div>
+				</div>
+				<div class="main__descr">Закажите замер специалиста и забронируйте <br>
+					​10% скидки на каждый м² штукатурки до 31 августа</div>
+				<div class="main__measurement">
+					<a href="#" class="btn main__buttom d-inline">Заказать бесплатный замер</a>
+					<div class="main__measurement-descr d-sm-block d-xl-inline">Мин. заказ от 100 м²</div>
+				</div>
+				<!-- ======Круглый блок============= -->
+				<div class="main__circle position-absolute d-none d-xl-block"> 
+					<img src="img/trowel.png" alt="" class="trowel position-absolute">
+					<div class="main__circle-descr"><span class="bold-md">1200+</span> обектов оштукатурили с 2017 г </div>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-between">
+			<div class="col-sm-12 col-md-3 col-xl-4 d-none d-md-block  main__box position-relative ">
+				<svg class="circle-check position-absolute" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+					<circle cx="32" cy="32" r="32" fill="white"/>
+					<path fill-rule="evenodd" transform="translate(12, 12)" clip-rule="evenodd" d="M20 1.66666C9.87496 1.66666 1.66663 9.87499 1.66663 20C1.66663 30.125 9.87496 38.3333 20 38.3333C30.125 38.3333 38.3333 30.125 38.3333 20C38.3333 9.87499 30.125 1.66666 20 1.66666ZM27.9466 16.9C28.093 16.7327 28.2044 16.5379 28.2743 16.3269C28.3442 16.116 28.3712 15.8932 28.3537 15.6716C28.3363 15.4501 28.2747 15.2343 28.1726 15.0369C28.0705 14.8395 27.9299 14.6645 27.7592 14.5222C27.5885 14.38 27.391 14.2733 27.1785 14.2084C26.9659 14.1436 26.7425 14.1219 26.5214 14.1447C26.3004 14.1675 26.0861 14.2342 25.8912 14.341C25.6963 14.4479 25.5248 14.5926 25.3866 14.7667L18.22 23.365L14.5116 19.655C14.1973 19.3514 13.7763 19.1834 13.3393 19.1872C12.9023 19.191 12.4843 19.3663 12.1753 19.6753C11.8662 19.9843 11.691 20.4023 11.6872 20.8393C11.6834 21.2763 11.8514 21.6973 12.155 22.0117L17.155 27.0117C17.3187 27.1753 17.5148 27.3031 17.7307 27.3868C17.9465 27.4704 18.1775 27.5082 18.4087 27.4977C18.64 27.4872 18.8666 27.4287 19.074 27.3257C19.2814 27.2228 19.465 27.0778 19.6133 26.9L27.9466 16.9Z" fill="#FF8000"/>
+				</svg>				
+				<div class="main__box-descr"><span class="bold-m">120  м²</span><br>
+					в день - скорость работы бригады</div>
+			</div>
+			<div class=" col-sm-3 col-xl-4 d-none d-md-block  main__box position-relative">
+				<svg class="circle-check position-absolute " xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+					<circle cx="32" cy="32" r="32" fill="white"/>
+					<path fill-rule="evenodd" transform="translate(12, 12)" clip-rule="evenodd" d="M20 1.66666C9.87496 1.66666 1.66663 9.87499 1.66663 20C1.66663 30.125 9.87496 38.3333 20 38.3333C30.125 38.3333 38.3333 30.125 38.3333 20C38.3333 9.87499 30.125 1.66666 20 1.66666ZM27.9466 16.9C28.093 16.7327 28.2044 16.5379 28.2743 16.3269C28.3442 16.116 28.3712 15.8932 28.3537 15.6716C28.3363 15.4501 28.2747 15.2343 28.1726 15.0369C28.0705 14.8395 27.9299 14.6645 27.7592 14.5222C27.5885 14.38 27.391 14.2733 27.1785 14.2084C26.9659 14.1436 26.7425 14.1219 26.5214 14.1447C26.3004 14.1675 26.0861 14.2342 25.8912 14.341C25.6963 14.4479 25.5248 14.5926 25.3866 14.7667L18.22 23.365L14.5116 19.655C14.1973 19.3514 13.7763 19.1834 13.3393 19.1872C12.9023 19.191 12.4843 19.3663 12.1753 19.6753C11.8662 19.9843 11.691 20.4023 11.6872 20.8393C11.6834 21.2763 11.8514 21.6973 12.155 22.0117L17.155 27.0117C17.3187 27.1753 17.5148 27.3031 17.7307 27.3868C17.9465 27.4704 18.1775 27.5082 18.4087 27.4977C18.64 27.4872 18.8666 27.4287 19.074 27.3257C19.2814 27.2228 19.465 27.0778 19.6133 26.9L27.9466 16.9Z" fill="#FF8000"/>
+				</svg>				
+				<div class="main__box-descr"><span class="bold-m">100%</span><br>
+					чистота и порядок на рабочем месте</div>
+			</div>
+			<div class=" col-sm-3 col-xl-4 d-none d-md-block main__box position-relative">
+				<svg class="circle-check  position-absolute " xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+				<circle cx="32" cy="32" r="32" fill="white"/>
+				<path transform="translate(12, 12)" fill-rule="evenodd" clip-rule="evenodd" d="M20 1.66666C9.87496 1.66666 1.66663 9.87499 1.66663 20C1.66663 30.125 9.87496 38.3333 20 38.3333C30.125 38.3333 38.3333 30.125 38.3333 20C38.3333 9.87499 30.125 1.66666 20 1.66666ZM27.9466 16.9C28.093 16.7327 28.2044 16.5379 28.2743 16.3269C28.3442 16.116 28.3712 15.8932 28.3537 15.6716C28.3363 15.4501 28.2747 15.2343 28.1726 15.0369C28.0705 14.8395 27.9299 14.6645 27.7592 14.5222C27.5885 14.38 27.391 14.2733 27.1785 14.2084C26.9659 14.1436 26.7425 14.1219 26.5214 14.1447C26.3004 14.1675 26.0861 14.2342 25.8912 14.341C25.6963 14.4479 25.5248 14.5926 25.3866 14.7667L18.22 23.365L14.5116 19.655C14.1973 19.3514 13.7763 19.1834 13.3393 19.1872C12.9023 19.191 12.4843 19.3663 12.1753 19.6753C11.8662 19.9843 11.691 20.4023 11.6872 20.8393C11.6834 21.2763 11.8514 21.6973 12.155 22.0117L17.155 27.0117C17.3187 27.1753 17.5148 27.3031 17.7307 27.3868C17.9465 27.4704 18.1775 27.5082 18.4087 27.4977C18.64 27.4872 18.8666 27.4287 19.074 27.3257C19.2814 27.2228 19.465 27.0778 19.6133 26.9L27.9466 16.9Z" fill="#FF8000"/>
+				</svg>
+				<div class="main__box-descr"><span class="bold-m">24/7</span><br>
+					работаем без перырывов</div>
+			</div>
+			<div id="carouselExampleIndicators" class="carousel slide col-sm-12 d-md-none " data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class=" main__box_carousel position-relative ">
+							<svg class="circle-check position-absolute" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+								<circle cx="32" cy="32" r="32" fill="white"/>
+								<path fill-rule="evenodd" transform="translate(12, 12)" clip-rule="evenodd" d="M20 1.66666C9.87496 1.66666 1.66663 9.87499 1.66663 20C1.66663 30.125 9.87496 38.3333 20 38.3333C30.125 38.3333 38.3333 30.125 38.3333 20C38.3333 9.87499 30.125 1.66666 20 1.66666ZM27.9466 16.9C28.093 16.7327 28.2044 16.5379 28.2743 16.3269C28.3442 16.116 28.3712 15.8932 28.3537 15.6716C28.3363 15.4501 28.2747 15.2343 28.1726 15.0369C28.0705 14.8395 27.9299 14.6645 27.7592 14.5222C27.5885 14.38 27.391 14.2733 27.1785 14.2084C26.9659 14.1436 26.7425 14.1219 26.5214 14.1447C26.3004 14.1675 26.0861 14.2342 25.8912 14.341C25.6963 14.4479 25.5248 14.5926 25.3866 14.7667L18.22 23.365L14.5116 19.655C14.1973 19.3514 13.7763 19.1834 13.3393 19.1872C12.9023 19.191 12.4843 19.3663 12.1753 19.6753C11.8662 19.9843 11.691 20.4023 11.6872 20.8393C11.6834 21.2763 11.8514 21.6973 12.155 22.0117L17.155 27.0117C17.3187 27.1753 17.5148 27.3031 17.7307 27.3868C17.9465 27.4704 18.1775 27.5082 18.4087 27.4977C18.64 27.4872 18.8666 27.4287 19.074 27.3257C19.2814 27.2228 19.465 27.0778 19.6133 26.9L27.9466 16.9Z" fill="#FF8000"/>
+							</svg>				
+							<div class="main__box-descr"><span class="bold-m">120  м²</span><br>
+								в день - скорость работы бригады</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="  main__box_carousel position-relative">
+							<svg class="circle-check position-absolute " xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+								<circle cx="32" cy="32" r="32" fill="white"/>
+								<path fill-rule="evenodd" transform="translate(12, 12)" clip-rule="evenodd" d="M20 1.66666C9.87496 1.66666 1.66663 9.87499 1.66663 20C1.66663 30.125 9.87496 38.3333 20 38.3333C30.125 38.3333 38.3333 30.125 38.3333 20C38.3333 9.87499 30.125 1.66666 20 1.66666ZM27.9466 16.9C28.093 16.7327 28.2044 16.5379 28.2743 16.3269C28.3442 16.116 28.3712 15.8932 28.3537 15.6716C28.3363 15.4501 28.2747 15.2343 28.1726 15.0369C28.0705 14.8395 27.9299 14.6645 27.7592 14.5222C27.5885 14.38 27.391 14.2733 27.1785 14.2084C26.9659 14.1436 26.7425 14.1219 26.5214 14.1447C26.3004 14.1675 26.0861 14.2342 25.8912 14.341C25.6963 14.4479 25.5248 14.5926 25.3866 14.7667L18.22 23.365L14.5116 19.655C14.1973 19.3514 13.7763 19.1834 13.3393 19.1872C12.9023 19.191 12.4843 19.3663 12.1753 19.6753C11.8662 19.9843 11.691 20.4023 11.6872 20.8393C11.6834 21.2763 11.8514 21.6973 12.155 22.0117L17.155 27.0117C17.3187 27.1753 17.5148 27.3031 17.7307 27.3868C17.9465 27.4704 18.1775 27.5082 18.4087 27.4977C18.64 27.4872 18.8666 27.4287 19.074 27.3257C19.2814 27.2228 19.465 27.0778 19.6133 26.9L27.9466 16.9Z" fill="#FF8000"/>
+							</svg>				
+							<div class="main__box-descr"><span class="bold-m">100%</span><br>
+								чистота и порядок на рабочем месте</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class=" main__box_carousel position-relative">
+							<svg class="circle-check  position-absolute " xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+							<circle cx="32" cy="32" r="32" fill="white"/>
+							<path transform="translate(12, 12)" fill-rule="evenodd" clip-rule="evenodd" d="M20 1.66666C9.87496 1.66666 1.66663 9.87499 1.66663 20C1.66663 30.125 9.87496 38.3333 20 38.3333C30.125 38.3333 38.3333 30.125 38.3333 20C38.3333 9.87499 30.125 1.66666 20 1.66666ZM27.9466 16.9C28.093 16.7327 28.2044 16.5379 28.2743 16.3269C28.3442 16.116 28.3712 15.8932 28.3537 15.6716C28.3363 15.4501 28.2747 15.2343 28.1726 15.0369C28.0705 14.8395 27.9299 14.6645 27.7592 14.5222C27.5885 14.38 27.391 14.2733 27.1785 14.2084C26.9659 14.1436 26.7425 14.1219 26.5214 14.1447C26.3004 14.1675 26.0861 14.2342 25.8912 14.341C25.6963 14.4479 25.5248 14.5926 25.3866 14.7667L18.22 23.365L14.5116 19.655C14.1973 19.3514 13.7763 19.1834 13.3393 19.1872C12.9023 19.191 12.4843 19.3663 12.1753 19.6753C11.8662 19.9843 11.691 20.4023 11.6872 20.8393C11.6834 21.2763 11.8514 21.6973 12.155 22.0117L17.155 27.0117C17.3187 27.1753 17.5148 27.3031 17.7307 27.3868C17.9465 27.4704 18.1775 27.5082 18.4087 27.4977C18.64 27.4872 18.8666 27.4287 19.074 27.3257C19.2814 27.2228 19.465 27.0778 19.6133 26.9L27.9466 16.9Z" fill="#FF8000"/>
+							</svg>
+							<div class="main__box-descr"><span class="bold-m">24/7</span><br>
+								работаем без перырывов</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ===============================Подробности=========================== -->
+
+<section class="details">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 details__box">
+				<img class="details__img" src="img/section_2/img_1.png" alt="">
+				<div class="details__box-header">Ровные стены и пол без трещин и усадки</div>
+				<div class="details__box-subheader">Благодаря современной технике
+					и мастерам с отпытом от 5 лет Вы останетесь довольны качеством </div>
+			</div>
+			<div class="col-md-4 details__box">
+				<img class="details__img" src="img/section_2/img_2.png" alt="">
+				<div class="details__box-header">Гарантия 5 лет на всю работу</div>
+				<div class="details__box-subheader">Вы можете быть уверены в том, что
+					в период гарантии, мы приедем
+					и исправим ситуацию </div>
+			</div>
+			<div class="col-md-4 details__box">
+				<img class="details__img" src="img/section_2/img_3.png" alt="">
+				<div class="details__box-header">Экономия Ваших денег</div>
+				<div class="details__box-subheader">Вам не придется переживать
+					за возможную предоплату, т.к. мы имеем собственный склад материалов
+					и работаем без наценок</div>
+			</div>
+			<div class="col-md-4 details__box">
+				<img class="details__img" src="img/section_2/img_4.png" alt="">
+				<div class="details__box-header">Вы получаете сертификат качества</div>
+				<div class="details__box-subheader">Вы получите дополнительную гарантию, что работы будут выполнены при соблюдении ГОСТов и СНиПов</div>
+			</div>
+			<div class="col-md-4 details__box">
+				<img class="details__img" src="img/section_2/img_5.png" alt="">
+				<div class="details__box-header">Высокая скорость работы </div>
+				<div class="details__box-subheader">Благодаря современному оборудованию уникальной технологии
+					и высокому опыту наших мастеров,
+					Вы получаете результат быстрее</div>
+			</div>
+			<div class="col-md-4 details__box">
+				<img class="details__img" src="img/section_2/img_6.png" alt="">
+				<div class="details__box-header">Порядок на рабочем месте</div>
+				<div class="details__box-subheader">После нас только ровные стены, пол
+					и чистота. Вы сможете полностью довериться нашим специалистам
+					и заняться Вашими любимыми делами</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ===================================Выгода==================== -->
+
+<section class="benefit">
+	<div class="container">
+		<h2 class="benefit__header mx-auto ">Почему это выгодно Вам?</h2>
+		<div class="row">
+			<div class="col-md-6">
+				<ul class="benefit__list list-group">
+					<li class="benefit__item list-group-item d-flex align-items-center">
+						<img class="benefit__img" src="img/section_3/img_1.png" alt="">
+						<div class="list-descr_bold">Преимущества механизированной штукатурки стен</div>
+					</li>
+					<li class="benefit__item list-group-item  d-flex align-items-start">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M15 1.25C7.40625 1.25 1.25 7.40625 1.25 15C1.25 22.5938 7.40625 28.75 15 28.75C22.5938 28.75 28.75 22.5938 28.75 15C28.75 7.40625 22.5938 1.25 15 1.25ZM20.96 12.675C21.0697 12.5496 21.1533 12.4034 21.2057 12.2452C21.2582 12.087 21.2784 11.9199 21.2653 11.7537C21.2522 11.5876 21.206 11.4257 21.1295 11.2777C21.0529 11.1296 20.9475 10.9984 20.8194 10.8917C20.6914 10.785 20.5433 10.705 20.3839 10.6563C20.2244 10.6077 20.0569 10.5915 19.8911 10.6085C19.7253 10.6256 19.5646 10.6757 19.4184 10.7558C19.2723 10.8359 19.1436 10.9444 19.04 11.075L13.665 17.5238L10.8838 14.7413C10.648 14.5136 10.3322 14.3876 10.0045 14.3904C9.67675 14.3933 9.36324 14.5247 9.13148 14.7565C8.89972 14.9882 8.76826 15.3018 8.76541 15.6295C8.76256 15.9572 8.88855 16.273 9.11625 16.5088L12.8663 20.2588C12.9891 20.3815 13.1361 20.4773 13.298 20.5401C13.4599 20.6028 13.6331 20.6312 13.8066 20.6233C13.9801 20.6154 14.15 20.5715 14.3055 20.4943C14.4611 20.4171 14.5988 20.3084 14.71 20.175L20.96 12.675Z" fill="#FF8000"/>
+							</svg>
+							<div class="list-descr">Идеально ровные стены - в <span class="bold">5 раз быстрее</span> обычного способа</div>
+					</li>
+					<li class="benefit__item list-group-item  d-flex align-items-start">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M15 1.25C7.40625 1.25 1.25 7.40625 1.25 15C1.25 22.5938 7.40625 28.75 15 28.75C22.5938 28.75 28.75 22.5938 28.75 15C28.75 7.40625 22.5938 1.25 15 1.25ZM20.96 12.675C21.0697 12.5496 21.1533 12.4034 21.2057 12.2452C21.2582 12.087 21.2784 11.9199 21.2653 11.7537C21.2522 11.5876 21.206 11.4257 21.1295 11.2777C21.0529 11.1296 20.9475 10.9984 20.8194 10.8917C20.6914 10.785 20.5433 10.705 20.3839 10.6563C20.2244 10.6077 20.0569 10.5915 19.8911 10.6085C19.7253 10.6256 19.5646 10.6757 19.4184 10.7558C19.2723 10.8359 19.1436 10.9444 19.04 11.075L13.665 17.5238L10.8838 14.7413C10.648 14.5136 10.3322 14.3876 10.0045 14.3904C9.67675 14.3933 9.36324 14.5247 9.13148 14.7565C8.89972 14.9882 8.76826 15.3018 8.76541 15.6295C8.76256 15.9572 8.88855 16.273 9.11625 16.5088L12.8663 20.2588C12.9891 20.3815 13.1361 20.4773 13.298 20.5401C13.4599 20.6028 13.6331 20.6312 13.8066 20.6233C13.9801 20.6154 14.15 20.5715 14.3055 20.4943C14.4611 20.4171 14.5988 20.3084 14.71 20.175L20.96 12.675Z" fill="#FF8000"/>
+						</svg>
+						<div class="list-descr"><span class="bold">Экономия до 40%</span> с Вашего бюджета благодаря применению машинной технологии</div>
+					</li>
+					<li class="benefit__item list-group-item d-flex align-items-start ">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M15 1.25C7.40625 1.25 1.25 7.40625 1.25 15C1.25 22.5938 7.40625 28.75 15 28.75C22.5938 28.75 28.75 22.5938 28.75 15C28.75 7.40625 22.5938 1.25 15 1.25ZM20.96 12.675C21.0697 12.5496 21.1533 12.4034 21.2057 12.2452C21.2582 12.087 21.2784 11.9199 21.2653 11.7537C21.2522 11.5876 21.206 11.4257 21.1295 11.2777C21.0529 11.1296 20.9475 10.9984 20.8194 10.8917C20.6914 10.785 20.5433 10.705 20.3839 10.6563C20.2244 10.6077 20.0569 10.5915 19.8911 10.6085C19.7253 10.6256 19.5646 10.6757 19.4184 10.7558C19.2723 10.8359 19.1436 10.9444 19.04 11.075L13.665 17.5238L10.8838 14.7413C10.648 14.5136 10.3322 14.3876 10.0045 14.3904C9.67675 14.3933 9.36324 14.5247 9.13148 14.7565C8.89972 14.9882 8.76826 15.3018 8.76541 15.6295C8.76256 15.9572 8.88855 16.273 9.11625 16.5088L12.8663 20.2588C12.9891 20.3815 13.1361 20.4773 13.298 20.5401C13.4599 20.6028 13.6331 20.6312 13.8066 20.6233C13.9801 20.6154 14.15 20.5715 14.3055 20.4943C14.4611 20.4171 14.5988 20.3084 14.71 20.175L20.96 12.675Z" fill="#FF8000"/>
+						</svg>
+						<div class="list-descr">Если вы делаете штукатурку под обои у нас, <span class="bold">шпаклевка вам не понадобится!</span></div>
+					</li>
+					<li class="benefit__item list-group-item d-flex align-items-start">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M15 1.25C7.40625 1.25 1.25 7.40625 1.25 15C1.25 22.5938 7.40625 28.75 15 28.75C22.5938 28.75 28.75 22.5938 28.75 15C28.75 7.40625 22.5938 1.25 15 1.25ZM20.96 12.675C21.0697 12.5496 21.1533 12.4034 21.2057 12.2452C21.2582 12.087 21.2784 11.9199 21.2653 11.7537C21.2522 11.5876 21.206 11.4257 21.1295 11.2777C21.0529 11.1296 20.9475 10.9984 20.8194 10.8917C20.6914 10.785 20.5433 10.705 20.3839 10.6563C20.2244 10.6077 20.0569 10.5915 19.8911 10.6085C19.7253 10.6256 19.5646 10.6757 19.4184 10.7558C19.2723 10.8359 19.1436 10.9444 19.04 11.075L13.665 17.5238L10.8838 14.7413C10.648 14.5136 10.3322 14.3876 10.0045 14.3904C9.67675 14.3933 9.36324 14.5247 9.13148 14.7565C8.89972 14.9882 8.76826 15.3018 8.76541 15.6295C8.76256 15.9572 8.88855 16.273 9.11625 16.5088L12.8663 20.2588C12.9891 20.3815 13.1361 20.4773 13.298 20.5401C13.4599 20.6028 13.6331 20.6312 13.8066 20.6233C13.9801 20.6154 14.15 20.5715 14.3055 20.4943C14.4611 20.4171 14.5988 20.3084 14.71 20.175L20.96 12.675Z" fill="#FF8000"/>
+						</svg>
+						<div class="list-descr">Готовый <span class="bold">результат за 1-4 дня</span> блягодаря специальному оборуованию</div>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<ul class="benefit__list list-group">
+					<li class="benefit__item list-group-item d-flex align-items-center">
+						<img class="benefit__img" src="img/section_3/img_2.png" alt="">
+						<div class="list-descr_bold">Преимущества сухой стяжки пола</div>
+					</li>
+					<li class="benefit__item list-group-item d-flex align-items-start">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M15 1.25C7.40625 1.25 1.25 7.40625 1.25 15C1.25 22.5938 7.40625 28.75 15 28.75C22.5938 28.75 28.75 22.5938 28.75 15C28.75 7.40625 22.5938 1.25 15 1.25ZM20.96 12.675C21.0697 12.5496 21.1533 12.4034 21.2057 12.2452C21.2582 12.087 21.2784 11.9199 21.2653 11.7537C21.2522 11.5876 21.206 11.4257 21.1295 11.2777C21.0529 11.1296 20.9475 10.9984 20.8194 10.8917C20.6914 10.785 20.5433 10.705 20.3839 10.6563C20.2244 10.6077 20.0569 10.5915 19.8911 10.6085C19.7253 10.6256 19.5646 10.6757 19.4184 10.7558C19.2723 10.8359 19.1436 10.9444 19.04 11.075L13.665 17.5238L10.8838 14.7413C10.648 14.5136 10.3322 14.3876 10.0045 14.3904C9.67675 14.3933 9.36324 14.5247 9.13148 14.7565C8.89972 14.9882 8.76826 15.3018 8.76541 15.6295C8.76256 15.9572 8.88855 16.273 9.11625 16.5088L12.8663 20.2588C12.9891 20.3815 13.1361 20.4773 13.298 20.5401C13.4599 20.6028 13.6331 20.6312 13.8066 20.6233C13.9801 20.6154 14.15 20.5715 14.3055 20.4943C14.4611 20.4171 14.5988 20.3084 14.71 20.175L20.96 12.675Z" fill="#FF8000"/>
+							</svg>
+							<div class="list-descr">Самый быстрый спосок получения <span class="bold">идеально ровного пола</span> у Вас в помещении или дома</div>
+					</li>
+					<li class="benefit__item list-group-item d-flex align-items-start">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M15 1.25C7.40625 1.25 1.25 7.40625 1.25 15C1.25 22.5938 7.40625 28.75 15 28.75C22.5938 28.75 28.75 22.5938 28.75 15C28.75 7.40625 22.5938 1.25 15 1.25ZM20.96 12.675C21.0697 12.5496 21.1533 12.4034 21.2057 12.2452C21.2582 12.087 21.2784 11.9199 21.2653 11.7537C21.2522 11.5876 21.206 11.4257 21.1295 11.2777C21.0529 11.1296 20.9475 10.9984 20.8194 10.8917C20.6914 10.785 20.5433 10.705 20.3839 10.6563C20.2244 10.6077 20.0569 10.5915 19.8911 10.6085C19.7253 10.6256 19.5646 10.6757 19.4184 10.7558C19.2723 10.8359 19.1436 10.9444 19.04 11.075L13.665 17.5238L10.8838 14.7413C10.648 14.5136 10.3322 14.3876 10.0045 14.3904C9.67675 14.3933 9.36324 14.5247 9.13148 14.7565C8.89972 14.9882 8.76826 15.3018 8.76541 15.6295C8.76256 15.9572 8.88855 16.273 9.11625 16.5088L12.8663 20.2588C12.9891 20.3815 13.1361 20.4773 13.298 20.5401C13.4599 20.6028 13.6331 20.6312 13.8066 20.6233C13.9801 20.6154 14.15 20.5715 14.3055 20.4943C14.4611 20.4171 14.5988 20.3084 14.71 20.175L20.96 12.675Z" fill="#FF8000"/>
+							</svg>
+						<div class="list-descr">Полная <span class="bold">сохранность от возможных протечек</span>отолка Ваших соседей</div>
+					</li>
+					<li class="benefit__item list-group-item d-flex align-items-start">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M15 1.25C7.40625 1.25 1.25 7.40625 1.25 15C1.25 22.5938 7.40625 28.75 15 28.75C22.5938 28.75 28.75 22.5938 28.75 15C28.75 7.40625 22.5938 1.25 15 1.25ZM20.96 12.675C21.0697 12.5496 21.1533 12.4034 21.2057 12.2452C21.2582 12.087 21.2784 11.9199 21.2653 11.7537C21.2522 11.5876 21.206 11.4257 21.1295 11.2777C21.0529 11.1296 20.9475 10.9984 20.8194 10.8917C20.6914 10.785 20.5433 10.705 20.3839 10.6563C20.2244 10.6077 20.0569 10.5915 19.8911 10.6085C19.7253 10.6256 19.5646 10.6757 19.4184 10.7558C19.2723 10.8359 19.1436 10.9444 19.04 11.075L13.665 17.5238L10.8838 14.7413C10.648 14.5136 10.3322 14.3876 10.0045 14.3904C9.67675 14.3933 9.36324 14.5247 9.13148 14.7565C8.89972 14.9882 8.76826 15.3018 8.76541 15.6295C8.76256 15.9572 8.88855 16.273 9.11625 16.5088L12.8663 20.2588C12.9891 20.3815 13.1361 20.4773 13.298 20.5401C13.4599 20.6028 13.6331 20.6312 13.8066 20.6233C13.9801 20.6154 14.15 20.5715 14.3055 20.4943C14.4611 20.4171 14.5988 20.3084 14.71 20.175L20.96 12.675Z" fill="#FF8000"/>
+							</svg>
+						<div class="list-descr"><span class="bold">Высокая ударопрочность</span>ность</spa> и отличная устойчивость к механическим нагрузкам</div>
+					</li>
+					<li class="benefit__item list-group-item d-flex align-items-start">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M15 1.25C7.40625 1.25 1.25 7.40625 1.25 15C1.25 22.5938 7.40625 28.75 15 28.75C22.5938 28.75 28.75 22.5938 28.75 15C28.75 7.40625 22.5938 1.25 15 1.25ZM20.96 12.675C21.0697 12.5496 21.1533 12.4034 21.2057 12.2452C21.2582 12.087 21.2784 11.9199 21.2653 11.7537C21.2522 11.5876 21.206 11.4257 21.1295 11.2777C21.0529 11.1296 20.9475 10.9984 20.8194 10.8917C20.6914 10.785 20.5433 10.705 20.3839 10.6563C20.2244 10.6077 20.0569 10.5915 19.8911 10.6085C19.7253 10.6256 19.5646 10.6757 19.4184 10.7558C19.2723 10.8359 19.1436 10.9444 19.04 11.075L13.665 17.5238L10.8838 14.7413C10.648 14.5136 10.3322 14.3876 10.0045 14.3904C9.67675 14.3933 9.36324 14.5247 9.13148 14.7565C8.89972 14.9882 8.76826 15.3018 8.76541 15.6295C8.76256 15.9572 8.88855 16.273 9.11625 16.5088L12.8663 20.2588C12.9891 20.3815 13.1361 20.4773 13.298 20.5401C13.4599 20.6028 13.6331 20.6312 13.8066 20.6233C13.9801 20.6154 14.15 20.5715 14.3055 20.4943C14.4611 20.4171 14.5988 20.3084 14.71 20.175L20.96 12.675Z" fill="#FF8000"/>
+							</svg>
+						<div class="list-descr">Вы сможете ходить по ровному полу уже <span class="bold">через 8 часов</span> </div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ==================================Расчет=============================== -->
+
+<section class="calculation">
+	<div class="container">
+
+<!-- ==============================Блок с вопросами============================ -->
+
+		<h2 class="calculation__header">Расчитайте индивидуальную стоимость работ</h2>
+		<div class="calculation__subheader">И получите <span class="bold">выезд специалиста за 24 часа</span> на Ваш обьект</div>
+		<ul class="nav nav-pills mb-3 calculation__nav justify-content-between" id="pills-tab" role="tablist">
+			<li class="nav-item" role="presentation">
+				<a class="nav-link nav__btn active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Вопрос 1</a>
+			</li>
+			<li class="nav-item" role="presentation">
+				<a class="nav-link nav__btn" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Вопрос 2</a>
+			</li>
+			<li class="nav-item" role="presentation">
+				<a class="nav-link nav__btn" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Вопрос 3</a>
+			</li>
+			<li class="nav-item" role="presentation">
+				<a class="nav-link nav__btn" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Вопрос 4</a>
+			</li>
+			<li class="nav-item" role="presentation">
+				<a class="nav-link nav__btn" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Вопрос 5</a>
+			</li>
+			<li class="nav-item" role="presentation">
+				<a class="nav-link nav__btn" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Вопрос 6</a>
+			</li>
+			<li class="nav-item" role="presentation">
+				<a class="nav-link nav__btn" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Вопрос 7</a>
+			</li>
+		</ul>
+
+<!-- ======================================Первый вопрос========================= -->
+
+		<div class="tab-content calculation__form " id="pills-tabContent">
+			<div class="tab-pane fade show active " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+					<form action="" method="post" class="question col-md-12 d-flex flex-wrap justify-content-center align-items-center">
+						<h2 class="form__header">Выберите вид работы,который вас интересует</h2>
+						<div class="form__box d-flex flex-wrap justify-content-around align-items-start">
+							<div class="form-check form-check-inline ">
+								<label class="form-check-label" for="inlineRadio1">
+									<input class="form-check-input question__input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="question__1-1.png">
+									<img class="form__img" src="img/section_4/question__1-1.png" alt="">
+									<div class="radio__descr">Гипсовая штукатурка</div>
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<label class="form-check-label " for="inlineRadio2">
+									<input class="form-check-input question__input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="question__1-2.png">
+									<img class="form__img" src="img/section_4/question__1-2.png" alt="">
+									<div class="radio__descr">Песчано-цементная <br> штукатурка</div>
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<label class="form-check-label" for="inlineRadio3">
+									<input class="form-check-input question__input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="question__1-3.png">
+									<img  class="form__img" src="img/section_4/question__1-3.png" alt="">
+									<div class="radio__descr">Стяжка пола</div>
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<label class="form-check-label" for="inlineRadio4">
+									<input class="form-check-input question__input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="question__1-4.png">
+									<img class="form__img" src="img/section_4/question__1-4.png" alt="">
+									<div class="radio__descr">Шпаклевка</div>
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<label class="form-check-label" for="inlineRadio5">
+									<input class="form-check-input question__input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="question__1-5.png">
+									<img class="form__img" src="img/section_4/question__1-5.png" alt="">
+									<div class="radio__descr">Перегородки</div>
+								</label>
+							</div>
+						</div>
+						<button class="btn next__btn" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false" >Далее
+							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="16" viewBox="0 0 32 16" fill="none">
+								<path d="M31.2071 8.70711C31.5976 8.31658 31.5976 7.68342 31.2071 7.29289L24.8431 0.928932C24.4526 0.538408 23.8195 0.538408 23.4289 0.928932C23.0384 1.31946 23.0384 1.95262 23.4289 2.34315L29.0858 8L23.4289 13.6569C23.0384 14.0474 23.0384 14.6805 23.4289 15.0711C23.8195 15.4616 24.4526 15.4616 24.8431 15.0711L31.2071 8.70711ZM0.5 9H30.5V7H0.5V9Z" fill="white"/>
+							</svg>
+						</button>
+					</form>
+					
+			</div>
+			
+
+<!-- ===============================Второй вопрос=============================== -->
+
+			<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+				<form action="" method="post" class="question col-md-12 d-flex flex-wrap justify-content-center align-items-center">
+					<h2 class="form__header">Вид помещения</h2>
+						<div class="form__box d-flex flex-wrap justify-content-around align-items-start">
+							<div class="form-check form-check-inline">
+								<label class="form-check-label" for="inlineRadio2_1">
+									<input class="form-check-input question__input" type="radio" name="inlineRadioOptions" id="inlineRadio2_1" value="question__2-1.png">
+									<img class="form__img" src="img/section_4/question__2-1.png" alt="">
+									<div class="radio__descr">Вторичное жилье</div>
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<label class="form-check-label " for="inlineRadio2_2">
+									<input class="form-check-input question__input" type="radio" name="inlineRadioOptions" id="inlineRadio2_2" value="question__2-2.png">
+									<img class="form__img" src="img/section_4/question__2-2.png" alt="">
+									<div class="radio__descr">Коттедж</div>
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<label class="form-check-label" for="inlineRadio2_3">
+									<input class="form-check-input question__input" type="radio" name="inlineRadioOptions" id="inlineRadio2_3" value="question__2-3.png">
+									<img  class="form__img" src="img/section_4/question__2-3.png" alt="">
+									<div class="radio__descr">Частный дом</div>
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<label class="form-check-label" for="inlineRadio2_4">
+									<input class="form-check-input question__input" type="radio" name="inlineRadioOptions" id="inlineRadio2_4" value="question__2-4.png">
+									<img class="form__img" src="img/section_4/question__2-4.png" alt="">
+									<div class="radio__descr">Промышелнный <br> объект</div>
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<label class="form-check-label" for="inlineRadio2_5">
+									<input class="form-check-input question__input" type="radio" name="inlineRadioOptions" id="inlineRadio2_5" value="question__2-5.png">
+									<img class="form__img" src="img/section_4/question__2-5.png" alt="">
+									<div class="radio__descr">Нежилой объект</div>
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<div class="custom-file">
+									<label class="form-check-label" for="validatedInputGroupCustomFile">
+										<input type="file" class="form-check-input question__input input__file" id="validatedInputGroupCustomFile" required>
+										<img class="form__img" src="img/section_4/question__2-6.png" alt="">
+										<div class="radio__descr">Другое</div>
+									</label>
+								</div>
+							</div>
+						</div>
+					<button  class="btn back__btn">Вернуться назад</button>
+					<button  class="btn next__btn">Далее
+						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="16" viewBox="0 0 32 16" fill="none">
+							<path d="M31.2071 8.70711C31.5976 8.31658 31.5976 7.68342 31.2071 7.29289L24.8431 0.928932C24.4526 0.538408 23.8195 0.538408 23.4289 0.928932C23.0384 1.31946 23.0384 1.95262 23.4289 2.34315L29.0858 8L23.4289 13.6569C23.0384 14.0474 23.0384 14.6805 23.4289 15.0711C23.8195 15.4616 24.4526 15.4616 24.8431 15.0711L31.2071 8.70711ZM0.5 9H30.5V7H0.5V9Z" fill="white"/>
+						</svg>
+					</button>
+				</form>
+			</div>
+
+			<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+			<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+			<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+			<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+			<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+		</div>
+	</div>
+</section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
