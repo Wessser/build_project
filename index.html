@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 	
-<!--
-	Урок 7.1 Проектирование лендинга 
-	Пример h37 - первый экран лендинга
-  
-	Создайте первый экран лендинга курса "Веб-разработчик". 
-	Оформление должно отличаться от примера.
-	
-	Задание для продвинутых:
-	Выберите свой товар или услугу.
-	Создайте первый экран лендинга.
--->
+<!--TODO     1)Задать правильные BEM классы-->
+<!--TODO     2)Укоротить CSS-->
+<!--TODO     3)Перейти на SCSS-->
+<!--TODO     4)Использовать адаптивные размеры-->
+<!--TODO     5)Настроить грамотную работу форм-->
+<!--TODO     6)Сделать backend-->
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,12 +17,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-    <title>Build</title>
+    <title>Урок 7.1</title>
 </head>
 
 <body>
 
-	<!-- ==========================ГЛАВНОЕ МЕНЮ================= -->
+	<!-- *==========================ГЛАВНОЕ МЕНЮ================= -->
 <header>
 		<div class="fixed-top">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -65,7 +61,7 @@
 			</nav>
 		</div>
 </header>
-<!-- =============================Заглавная секция============================ -->
+<!-- *=============================Заглавная секция============================ -->
 <section class="main">
 	<div class="container-sm container ">
 		<div class="row">
@@ -157,7 +153,7 @@
 	</div>
 </section>
 
-<!-- ===============================Подробности=========================== -->
+<!-- *===============================Подробности=========================== -->
 
 <section class="details">
 	<div class="container">
@@ -205,7 +201,7 @@
 	</div>
 </section>
 
-<!-- ===================================Выгода==================== -->
+<!--*===================================Выгода==================== -->
 
 <section class="benefit">
 	<div class="container">
@@ -279,12 +275,12 @@
 	</div>
 </section>
 
-<!-- ==================================Расчет=============================== -->
+<!-- *==================================Расчет=============================== -->
 
 <section class="calculation">
 	<div class="container">
 
-<!-- ==============================Блок с вопросами============================ -->
+<!-- *==============================Блок с вопросами============================ -->
 
 		<h2 class="calculation__header">Расчитайте индивидуальную стоимость работ</h2>
 		<div class="calculation__subheader">И получите <span class="bold">выезд специалиста за 24 часа</span> на Ваш обьект</div>
@@ -312,9 +308,11 @@
 			</li>
 		</ul>
 
-<!-- ======================================Первый вопрос========================= -->
 
 		<div class="tab-content calculation__form " id="pills-tabContent">
+
+<!-- *======================================Первый вопрос========================= -->
+
 			<div class="tab-pane fade show active " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 					<form action="" method="post" class="question col-md-12 d-flex flex-wrap justify-content-center align-items-center">
 						<h2 class="form__header">Выберите вид работы,который вас интересует</h2>
@@ -365,7 +363,7 @@
 			</div>
 			
 
-<!-- ===============================Второй вопрос=============================== -->
+<!-- *===============================Второй вопрос=============================== -->
 
 			<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
 				<form action="" method="post" class="question col-md-12 d-flex flex-wrap justify-content-center align-items-center">
@@ -425,11 +423,106 @@
 				</form>
 			</div>
 
+<!-- *===================================Третий вопрос================================ -->
+
 			<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
 			<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
 			<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
 			<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
 			<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+		</div>
+	</div>
+</section>
+
+<!-- *=======================================Оборудование how============================ -->
+
+<section class="how">
+	<div class="container">
+		<h2 class="how__header">Как мы обеспечим Вам ровные стены и пол быстро и выгодно</h2>
+		<div class="row">
+			<div class="col-md-6 how__station">
+				<h2 class="station__header">Штукатурная станция PFT RITMO XL позволит получить Вам:</h2>
+				<ul class="how__list">
+					<li class="how__item">
+						<div class="list-descr">Лучшая штукатурная станция на Вашем объекте</div>
+					</li>
+					<li class="how__item">
+						<div class="list-descr">Немецкое качество</div>
+					</li>
+					<li class="how__item">
+						<div class="list-descr">Максимально ровные стены и пол</div>
+					</li>
+					<li class="how__item">
+						<div class="list-descr">Хорошая адгезия, за счет однородной смеси</div>
+					</li>
+				</ul>
+				<div class="how__block img-box position-relative">
+					<img src="img/section_5/img_11.png" alt="" class="how__img">
+					<img src="img/section_5/img_2.png" alt="" class="how__img-circkle position-absolute">
+				</div>
+			</div>
+			<div class="col-md-6 how__station">
+				<h2 class="station__header">У нас - свой склад материалов. <br> Это позволит Вам: </h2>
+				<ul class="how__list">
+					<li class="how__item">
+						<div class="list-descr">Взять материалы без перекупов, напрямую от диллера</div>
+					</li>
+					<li class="how__item">
+						<div class="list-descr">Сэкономить до 30% на материале</div>
+					</li>
+					<li class="how__item">
+						<div class="list-descr">Получить бесплатную доставку</div>
+					</li>
+					<li class="how__item">
+						<div class="list-descr">Получить гарантию на всю продукцию и работу</div>
+					</li>
+					<li class="how__item">
+						<div class="list-descr">100% экологические материалы</div>
+					</li>
+				</ul>
+				<div class="how__block d-flex flex-wrap justify-content-around">
+					<div class="how__block-item d-flex flex-column">
+						<img src="img/section_5/img_item1.png" alt="" class="how__block-item_img">
+						<div class="how__block-item_descr">Гипсовая смесь Эконом JetBau/</div>
+					</div>
+					<div class="how__block-item d-flex flex-column">
+						<img src="img/section_5/img_item2.png" alt="" class="how__block-item_img">
+						<div class="how__block-item_descr">Knauf МП-75/ KREISEL 501</div>
+					</div>
+					<div class="how__block-item d-flex flex-column">
+						<img src="img/section_5/img_item3.png" alt="" class="how__block-item_img">
+						<div class="how__block-item_descr">Маяк штукатурный 6мм</div>
+					</div>
+					<div class="how__block-item d-flex flex-column">
+						<img src="img/section_5/img_item4.png" alt="" class="how__block-item_img">
+						<div class="how__block-item_descr">Уголок штукатурный 35х35мм</div>
+					</div>
+					<div class="how__block-item d-flex flex-column">
+						<img src="img/section_5/img_item5.png" alt="" class="how__block-item_img">
+						<div class="how__block-item_descr">Сетка штукатурная синтетическая</div>
+					</div>
+					<div class="how__block-item d-flex flex-column">
+						<img src="img/section_5/img_item6.png" alt="" class="how__block-item_img">
+						<div class="how__block-item_descr"> Бетонконтакт</div>
+					</div>
+					<div class="how__block-item d-flex flex-column">
+						<img src="img/section_5/img_item77.jpg" alt="" class="how__block-item_img">
+						<div class="how__block-item_descr"> Грунтовка  KNAUF Миттельгрунд</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="price">
+	<div class="container">
+		<h2 class="price__header">СТОИМОСТЬ РАБОТ</h2>
+		<div class="row">
+			<div class="col-md-6"></div>
+			<div class="col-md-6"></div>
 		</div>
 	</div>
 </section>

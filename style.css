@@ -457,7 +457,90 @@ span.bold-m{
 	text-decoration-line: underline;
 }
 
-/* ===========================Адаптивность===================== */
+
+/* *=======================Секция 5========================= */
+
+.how{
+	padding-bottom: 100px;
+}
+
+.how__header{
+	text-align: center;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 45px;
+	text-transform: uppercase;
+}
+
+.how__station{
+	margin: 35px 0 0 0;
+}
+
+.station__header{
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 36px;
+}
+
+.how__list{
+	margin-top: 20px;
+	padding-left: 16px;
+}
+
+.how__item{
+	border: none;
+	list-style: disc;
+}
+
+.how__block{
+	padding: 30px 20px;
+	margin-top: 30px;
+	border-radius: 16px;
+	background: #FAFAFA;
+	min-height: 520px;
+}
+
+.img-box{
+	margin-top: 56px;
+}
+
+
+.how__img{
+	padding: 10px 0 0 0;
+	width: 81%;
+}
+
+.how__img-circkle{
+	width: 37%;
+	right: 13px;
+	top: 124px;
+}
+
+.how__block-item{
+	max-width: 123px;
+}
+
+
+.how__block-item_descr{
+	margin-top: 10px;
+	color: #202020;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+}
+
+.price{
+	padding: 96px 0;
+	background: #FAFAFA;
+}
+
+
+
+
+/* *===========================Адаптивность===================== */
+
+
 @media screen and (max-width: 1200px) {
 
 	.main .main__header{
@@ -497,6 +580,10 @@ span.bold-m{
 	}
 	span.bold-m{
 		font-size: 24px;
+	}
+
+	.how__block{
+		min-height: auto;
 	}
 }
 
