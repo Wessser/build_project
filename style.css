@@ -5,18 +5,63 @@
 html{
 	font-size: 16px;
 }
-
+/* *=====================Отступ для фиксированого меню================= */
 body{
 	padding: 74px 0 0 0;
 }
-
-span.bold{
+/* *=====================Общий стиль выделенного текста================= */
+.bold{
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 27px;
 }
+/* *=====================Заголовок секций общий стиль======================= */
+.header{
+	text-align: center;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 45px;
+	text-transform: uppercase;
+}
 
-/* =================Меню навигации=================== */
+@media screen and (max-width: 386px){
+	.header{
+		font-size: 18px;
+	}
+	
+}
+/* *========================Элемент списка общий стиль======================= */
+.list__item {
+	padding-left: 0;
+	padding-right: 0;
+	background: none;
+	border: none;
+	gap: 16px;
+}
+/* *=========================Общая оранжевая кнопка========================== */
+.btn_orange{
+	border-radius: 100px;
+	border: 1px solid #FF8000;
+	background: #FF8000;
+	color: white;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px; 
+	text-decoration: none;
+}
+/* *===============================Станартный бокс========================== */
+.standard__box{
+	padding: 30px;
+	border-right: 1px #E6E6E6 solid;
+	border-bottom: 1px #E6E6E6 solid;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+
+/* *=================Меню навигации=================== */
 
 .navbar{
 	padding: 0;
@@ -65,7 +110,7 @@ span.bold{
 	margin-left: 1rem;
 }
 
-/* ======================Начальная секция====================== */
+/* *======================Начальная секция====================== */
 
 .main{
 	max-height: 800px;
@@ -130,15 +175,7 @@ span.main__header_yellow{
 
 .main__buttom{
 	padding: 20px 56px;
-	border-radius: 100px;
-	border: 1px solid #FF8000;
-	background: #FF8000;
-	color: white;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 24px; 
 	text-transform: uppercase;
-	text-decoration: none;
 }
 
 .main__measurement-descr{
@@ -235,25 +272,14 @@ span.bold-m{
 }
 
 .main__box_carousel .circle-check{
-
 	left: 220px; 
 }
 
-/* =====================Секция с подробностями=================== */
+/* *=====================Секция с подробностями=================== */
 
 .details{
 	min-height: 1000px;
 	padding: 170px 0 100px 0; 
-}
-
-.details__box{
-	padding: 30px;
-	border-right: 1px #E6E6E6 solid;
-	border-bottom: 1px #E6E6E6 solid;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 20px;
 }
 
 .details__box:nth-of-type(3n+3){
@@ -278,27 +304,11 @@ span.bold-m{
 	line-height: 24px;
 }
 
-/* =====================Выгода============================*/
+/* *=====================Выгода============================*/
 
 .benefit{
 	padding: 96px 0;
 	background: #FAFAFA;
-}
-
-.benefit__header{
-	text-align: center;
-	font-size: 26px;
-	font-weight: 700;
-	line-height: 45px;
-	text-transform: uppercase;
-}
-
-.benefit__item {
-	padding-left: 0;
-	padding-right: 0;
-	background: none;
-	border: none;
-	gap: 16px;
 }
 
 .benefit__item:first-of-type{
@@ -319,21 +329,11 @@ span.bold-m{
 	line-height: 27px; 
 }
 
-/* =====================Расчет=========================== */
+/* *=====================Расчет=========================== */
 
 .calculation{
 	padding: 100px 0;
 }
-
-.calculation__header{
-	text-align: center;
-	font-size: 26px;
-	font-weight: 700;
-	line-height: 45px;
-	text-transform: uppercase;
-}
-
-
 
 .nav-pills .nav-link.active{
 	border-radius: 100px;
@@ -345,7 +345,6 @@ span.bold-m{
 	font-weight: 700;
 	line-height: 24px;
 }
-
 
 .nav-pills .nav__btn{
 	
@@ -438,13 +437,6 @@ span.bold-m{
 .next__btn{
 	margin-top: 8px;
 	padding: 16px 48px;
-	border-radius: 100px;
-	border: 1px solid #FF8000;
-	background: #FF8000;
-	color: #FFF;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 24px;
 	text-transform: uppercase;
 }
 
@@ -457,19 +449,10 @@ span.bold-m{
 	text-decoration-line: underline;
 }
 
-
 /* *=======================Секция 5========================= */
 
 .how{
 	padding-bottom: 100px;
-}
-
-.how__header{
-	text-align: center;
-	font-size: 26px;
-	font-weight: 700;
-	line-height: 45px;
-	text-transform: uppercase;
 }
 
 .how__station{
@@ -504,7 +487,6 @@ span.bold-m{
 	margin-top: 56px;
 }
 
-
 .how__img{
 	padding: 10px 0 0 0;
 	width: 81%;
@@ -520,7 +502,6 @@ span.bold-m{
 	max-width: 123px;
 }
 
-
 .how__block-item_descr{
 	margin-top: 10px;
 	color: #202020;
@@ -530,13 +511,134 @@ span.bold-m{
 	line-height: 20px;
 }
 
+/* *===============================Секция 6========================== */
+
 .price{
 	padding: 96px 0;
 	background: #FAFAFA;
 }
 
+.price__header{
+	margin-bottom: 28px;
+}
+
+.price__item{
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.price__item_btn{
+	border: none;
+	padding: 0;
+}
+
+.price__btn{
+	margin-top: 30px;
+	padding: 16px 48px;
+	text-transform: uppercase;
+}
+
+/* *================================Секция 7================================ */
+
+.included{
+	padding: 100px 0;
+}
+
+.included__row{
+	gap: 30px;
+}
+
+.included__header{
+	margin-bottom: 40px;
+}
+
+.included__box{
+	max-width: 340px;
+	padding: 30px 20px;
+	border-radius: 16px;
+	box-shadow: 4px 4px 24px 0px rgba(0, 0, 0, 0.08);
+}
+
+.box__orange{
+	color:  #FFF;
+	background: #FF8000;
+}
+
+.box__orange .details__box-subheader{
+	color:  #FFF;
+} 
+
+.included__btn{
+	padding: 16px 48px;
+	background:  #FFF;
+	color: #202020;
+}
 
 
+.foreman__container{
+	margin-top: 142px;
+	border-radius: 16px;
+	background: #FFF7F3;
+	padding: 60px;
+}
+
+.foreman__header{
+	margin-bottom: 40px;
+	text-align: left;
+}
+
+.foreman__descr{
+	margin-left: 16px;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 27px;
+}
+
+.foreman__item{
+	margin-top: 30px;
+	gap: 25px;
+}
+
+.foreman__text{
+	color: #535353;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+.foreman__btn{
+	padding: 12px 24px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 18px;
+	text-transform: uppercase
+}
+
+.foreman__img{
+	position: absolute;
+	width: 158%;
+	top: -48%;
+	right: -29%;
+}
+
+.warranty__container{
+	padding: 100px 0 0 0;
+}
+
+.warranty__img{
+	max-width: 100%;
+}
+
+.warranty__header{
+	text-align: left;
+}
+
+.warranty__banner{
+	margin-top: 40px;
+}
+
+.warranty__list{
+	margin-top: 40px;
+}
 
 /* *===========================Адаптивность===================== */
 
@@ -585,6 +687,49 @@ span.bold-m{
 	.how__block{
 		min-height: auto;
 	}
+
+	.foreman__container{
+		margin-top: 102px;
+		padding: 30px;
+	}
+
+	.foreman__descr{
+		margin-left: 16px;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 27px;
+	}
+	
+	.foreman__item{
+		margin-top: 20px;
+		gap: 15px;
+	}
+	
+	.foreman__text{
+		font-size: 16px;
+		line-height: 30px;
+	}
+	
+	.foreman__btn{
+		padding: 10px 18px;
+		font-size: 10px;
+		line-height: 18px;
+	}
+
+	.foreman__img{
+    width: 128%;
+    top: -14%;
+    right: -14%;
+	}
+
+	.warranty__container .main__banner_green{
+		background-size: 54%;
+		padding: 10px 110px 5px;
+	}
+
+	.warranty__container .main__banner-text{
+		font-size: 17px;
+	}
 }
 
 @media screen and (max-width: 991px) {
@@ -618,9 +763,41 @@ span.bold-m{
 		left: 57px;
 	}
 
+	.price{
+		padding: 60px 0;
+	}
+
+	.price__item>*{
+		font-size: 13px;
+	}
+
+	.price__btn{
+		padding: 12px 28px;
+		font-size: 12px;
+	}
+
+	.foreman__header{
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	.foreman__img {
+		width: 149%;
+		top: -14%;
+		right: -25%;
+	}
+
+	.warranty__container .main__banner_green{
+		background-size: 74%;
+		padding: 10px 100px 5px;
+	}
+
+	.warranty__container .main__banner-text{
+		font-size: 18px;
+	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.main .main__header{
 		text-align: center;
 	}
@@ -645,6 +822,19 @@ span.bold-m{
 		font-size: 14px;
 	}
 
+	.foreman__img{
+		position: static;
+		width: 100%;
+	}
+
+	.warranty{
+		order: 2;
+	}
+
+	.warranty__container .main__banner_green{
+		background-size: 84%;
+		padding: 5px 60px 5px;
+	}
 }
 
 @media screen and (max-width: 575px){
@@ -701,8 +891,12 @@ span.bold-m{
 		left: 36.22vw; 
 	}
 
-	.benefit__img{
+	.list__img{
 		width: 75px;
+	}
+
+	.station__header{
+		font-size: 18px;
 	}
 }
 
